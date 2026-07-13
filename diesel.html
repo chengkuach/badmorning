@@ -1,152 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <title>Cheng Farmland</title>
-
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <title>Cheng Farmland</title>
 </head>
+
 <body>
 
-  <!-- 1. HEADER -->
-  <header class="site-header" id="top">
-    <div class="wrap header-inner">
-      <h1 class="brand">Cheng Farmland</h1>
-      <p class="tagline">Fresh from soil to table since 1988</p>
-    </div>
+    <header>
+        <h1>Cheng Farmland</h1>
+        <p>Fresh from soil to table since 1988</p>
 
-    <!-- 2. NAV -->
-    <nav class="site-nav" aria-label="Main navigation">
-      <div class="wrap nav-inner">
-        <a href="#top">Home</a>
-        <a href="#products">Products</a>
-        <a href="#animal-farming">Animal Farming</a>
-        <a href="#contact-form">Contact</a>
-      </div>
-    </nav>
-  </header>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#products">Products</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <!-- 3. MAIN -->
-  <main class="wrap">
+    <hr>
 
-    <!-- 4. SECTION -->
-    <section id="products" class="section" aria-labelledby="choice-heading">
-      <h2 id="choice-heading">Farmer's Choice</h2>
+    <main id="home">
 
-      <!-- 5. ARTICLE -->
-      <article class="card" id="animal-farming">
-        <h3>The Evolution of Agriculture</h3>
-        <p>Learn Animal Health, Nutrition, Recipes, and Resources gathered from three generations of the Cheng family farm.</p>
+        <section id="products">
+            <h2>Our Products</h2>
 
-        <!-- 6. FIGURE + 7. FIGCAPTION -->
-        <figure class="crop-figure">
-          <figcaption>Our east field, planted every spring since the farm opened.</figcaption>
-        </figure>
+            <article>
+                <h3>Animal Farming</h3>
 
-        <p>
-          Last field inspection was on
-          <!-- 8. TIME -->
-          <time datetime="2026-07-01">July 1, 2026</time>.
-        </p>
-      </article>
-    </section>
+                <p>
+                    We raise healthy animals and provide fresh farm products
+                    to our customers.
+                </p>
 
-    <!-- 9. ASIDE -->
-    <aside class="announcements" aria-labelledby="announce-heading">
-      <h3 id="announce-heading">Announcements</h3>
-      <p>Wholesale offers this week — valid through <time datetime="2026-07-14">July 14, 2026</time>.</p>
-    </aside>
+                <!-- Image 1 -->
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=500"
+                         alt="Farmland"
+                         width="400"
+                         loading="lazy">
+                    <figcaption>Our beautiful farmland.</figcaption>
+                </figure>
 
-    <!-- CONTACT / SIGN-UP FORM -->
-    <section id="contact-form" class="section form-section" aria-labelledby="form-heading">
-      <h2 id="form-heading">Get in Touch</h2>
-      <p class="form-intro">Questions about wholesale orders, animal products, or a farm visit? Send us a message.</p>
+                <!-- Image 2 -->
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=500"
+                         alt="Cows"
+                         width="400"
+                         loading="lazy">
+                    <figcaption>Healthy dairy cattle.</figcaption>
+                </figure>
 
-      <form id="contact-form-box" class="form-box" novalidate>
+                <!-- Image 3 -->
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=500"
+                         alt="Vegetables"
+                         width="400"
+                         loading="lazy">
+                    <figcaption>Fresh vegetables harvested daily.</figcaption>
+                </figure>
 
-        <!-- Search bar -->
-        <div class="form-group form-group--full">
-          <label for="site-search">Search the site</label>
-          <input type="search" id="site-search" name="site_search" placeholder="Search products, recipes, articles..." />
-        </div>
+                <p>
+                    Last updated:
+                    <time datetime="2026-07-01">July 1, 2026</time>
+                </p>
+            </article>
 
-        <!-- First / Last name -->
-        <div class="form-group">
-          <label for="first-name">First name</label>
-          <input type="text" id="first-name" name="first_name" autocomplete="given-name" required />
-        </div>
+        </section>
 
-        <div class="form-group">
-          <label for="last-name">Last name</label>
-          <input type="text" id="last-name" name="last_name" autocomplete="family-name" required />
-        </div>
+        <hr>
 
-        <!-- Email / Phone -->
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" id="email" name="email" autocomplete="email" required />
-        </div>
+        <aside>
+            <h3>News</h3>
+            <p>Wholesale discounts available this week.</p>
+        </aside>
 
-        <div class="form-group">
-          <label for="phone">Phone number</label>
-          <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+254 700 000000" />
-        </div>
+        <hr>
 
-        <!-- Date -->
-        <div class="form-group">
-          <label for="visit-date">Preferred visit date</label>
-          <input type="date" id="visit-date" name="visit_date" />
-        </div>
+        <section id="contact">
+            <h2>Contact Us</h2>
 
-        <!-- File attachment -->
-        <div class="form-group">
-          <label for="attachment">Attach a file</label>
-          <input type="file" id="attachment" name="attachment" />
-        </div>
+            <form>
 
-        <!-- Radio buttons -->
-        <fieldset class="form-group form-group--full">
-          <legend>I am contacting as a...</legend>
-          <label class="inline-choice">
-            <input type="radio" name="contact_type" value="individual" checked /> Individual
-          </label>
-          <label class="inline-choice">
-            <input type="radio" name="contact_type" value="wholesale" /> Wholesale buyer
-          </label>
-          <label class="inline-choice">
-            <input type="radio" name="contact_type" value="press" /> Press / Media
-          </label>
-        </fieldset>
+                <p>
+                    Name:<br>
+                    <input type="text" required>
+                </p>
 
-        <!-- Checkbox -->
-        <div class="form-group form-group--full">
-          <label class="inline-choice">
-            <input type="checkbox" id="newsletter" name="newsletter" />
-            Subscribe me to the Cheng Farmland newsletter
-          </label>
-        </div>
+                <p>
+                    Email:<br>
+                    <input type="email" required>
+                </p>
 
-        <!-- Submit -->
-        <div class="form-group form-group--full">
-          <button type="submit" id="submit-btn" class="btn-submit">Submit</button>
-          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
-        </div>
+                <p>
+                    Phone:<br>
+                    <input type="tel">
+                </p>
 
-      </form>
-    </section>
+                <p>
+                    Visit Date:<br>
+                    <input type="date">
+                </p>
 
-  </main>
+                <p>
+                    Upload File:<br>
+                    <input type="file">
+                </p>
 
-  <!-- 10. FOOTER -->
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>&copy; <time datetime="2026">2026</time> Cheng Farmland. All rights reserved.</p>
-    </div>
-  </footer>
+                <p>
+                    <input type="radio" name="type" checked> Customer
+                    <input type="radio" name="type"> Wholesale
+                </p>
 
-  <!-- Supabase client (only loaded/used if you fill in the keys in script.js) -->
+                <p>
+                    <input type="checkbox">
+                    Subscribe to our newsletter
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Cheng Farmland</p>
+    </footer>
+ 
+ <!-- Supabase client (only loaded/used if you fill in the keys in script.js) -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="script.js"></script>
+
 </body>
+
 </html>
